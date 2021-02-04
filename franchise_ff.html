@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/practice_ff.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<style>
+   	.a{
+		background-color: #0000009c;
+		height: 123px;
+		position: fixed;
+	  }
+	  .navbar-nav .nav-item .nav-link
+	  {
+	  	margin-left: 47px;
+        color: white;
+        width: max-content;
+	  }
+    .mob-logo{
+      display: none;
+    }
+    .xys{
+       	display: none;
+       }
+        .yzx{
+       display: block;
+       }
+   @media(max-width: 850px){
+   		  .mob-logo{
+   		display: block;
+   	   }
+   	  .web-logo{
+   		display: none;
+   	    }
+   	  .a{
+   		background-color:#fec724;
+   		height: 54px;
+   	   }
+   	   .website{
+   		display: none;
+   	   } 
+       	.mobile{
+   		  display: block;
+   	   }
+   	   .yzx{
+   	   	display: none;
+   	   }
+   	   .xys{
+   	   	display: block;
+   	   }
+       }
+      .no {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 0;
+    font-family: Montserrat,sans-serif;
+    word-spacing: 2px;
+     }
+     
+     .row{
+     	display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+     }
+    
+}
+.lol{
+	display: none;
+}
+.yes{
+	display: none;
+}
+
+.modal-content {
+    position: relative;
+    top: 54%;
+    display: flex;
+    /flex-direction: column;/
+    width: 100%;
+    /pointer-events: auto;/
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+.ss{
+	background: #fbb029;
+	border-radius: 18px;
+}
+@media (max-width: 900px){
+	.yes{
+		display: block;
+	}
+	.no{
+		display: none;
+	}
+	.yes{
+	background-image: url(img/whitefield.jpg);
+	width: 100%;
+}
+}
+@media (max-width: 1200px){
+.yes,.no {
+    max-width: 1169px;
+}}
+@media (max-width: 992px){
+.yes,.no {
+    max-width: 960px;
+}}
+@media (max-width: 768px){
+.yes,.no {
+    max-width: 720px;
+}}
+@media (max-width: 576px){
+.yes,.no {
+    max-width: 540px;
+}}
+@media screen and (max-width: 600px){
+.lol{
+    margin-top: -100px!important;
+}}
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark a fixed-top"><!--start navbar code-->
+		<div class="container"><!--start container-->
+			<a href="" class="navbar-brand">
+			  <img  class="web-logo" src="img/fflogo.png" width="65px" >
+              <img class="mob-logo" src="https://www.firstfiddle.in/assets/images/logo-for-mobile.png">
+			</a>
+
+
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#a"><!--start button-->
+
+            <span class="navbar-toggler-icon"></span>
+   
+    </button><!--end button-->
+
+    <div class="collapse navbar-collapse text-center" id="a"><!--start div of ul-->
+		<ul class="navbar-nav ml-auto"><!--start ul code-->
+			<li class="nav-item">
+				<a href="practice_ff.html" class="nav-link">HOME</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="about_ff.html" class="nav-link">ABOUT</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="brands_ff.html" class="nav-link">BRANDS</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="ourteam_ff.html" class="nav-link">OUR TEAM</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="pressrelease_ff.html" class="nav-link">PRESS RELEASE</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="contact_ff.html" class="nav-link">CONTACT</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="career_ff.html" class="nav-link">CAREERS</a>
+			</li><!--end-->
+			<li class="nav-item">
+				<a href="" class="nav-link border-box">FRANCHISE</a>
+			</li><!--end-->	
+		</ul><!--end ul code-->
+	   </div><!--end div of ul-->
+	    </div><!--end conatiner-->		
+	 
+		 
+    </nav><!--end navbar code-->
+  <div class="container-fluid p-0 " style="position: relative;">
+<img src="img/banner2.jpg" class="img-fluid yzx w-100 " >
+<img src="img/banner2.jpg" class="mob-logo xys w-100">
+    	
+    	<div class="container no">
+    		<div class="row">
+    			<div class="col-lg-4"></div>
+    			<div class="col-lg-3"></div>
+    			<div class="col-lg-5 text-center modal-content ss">
+    				<div class="heading text-center yt" style="padding-top: 10px;">
+    					<h4 class="text-white" style="font-family: 'Playfair Display', serif;">Inquiry Form</h4>
+    					<hr>
+    				</div>
+    				<p class="text-center text-black" style="margin-top: -13px; font-size: 12px;letter-spacing: 1px;">
+    					For more information about how you can become the part of First Fiddle Restaurants, submit your information below and the Franchise Manager will get in touch with you.
+    				</p>
+    				<form>
+    					<div class="row">
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1" style="margin-left: -153px;font-size: 13px;letter-spacing: 2px;">Name*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                                </div> 
+                            </div>
+                               <div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1" style="margin-left: -147px;font-size: 13px;letter-spacing: 2px;">Mobile*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mobile">
+                                </div>
+                            </div>
+    					</div>
+    					<div class="row">
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1" style="    margin-left: -152px;font-size: 13px;letter-spacing: 2px;">Email*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                </div> 
+                            </div>
+    						<div class="col-md-6">   
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1" style="margin-left: -53px;font-size: 13px;letter-spacing: 2px;">Business Location*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Business Location">
+                               </div>
+                           </div>
+    					</div>
+    					<div class="row">
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                     <label for="exampleFormControlInput1" style="margin-left: -49px;font-size: 13px;letter-spacing: 2px;">Investment Budget*</label>
+                                     <select  class="custom-select ng-pristine ng-touched" formcontrolname="investment_budget" name="investment_budget">
+                                     	<option  value="">Investment Budget</option>
+                                     	<option  value="1 Cr to 2 Cr">1 Cr to 2 Cr</option>
+                                     	<option  value="2 Cr to 3 Cr">2 Cr to 3 Cr</option>
+                                     	<option  value="3 Cr to 4 Cr">3 Cr to 4 Cr</option>
+                                     	<option  value="4 Cr to Above">4 Cr to Above</option>
+                                     </select>
+                                </div> 
+                            </div>
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1" style="margin-left: -58px;font-size: 13px;letter-spacing: 2px;">Brand*</label>
+                                    <select  class="custom-select ng-untouched ng-pristine ng-invalid" formcontrolname="all_brands" name="all_brands">
+                                    	<option   value="">Select a Brand</option>
+                                    	<option  value="Lord of The Drinks">Lord of The Drinks</option>
+                                    	<option  value="Dragonfly Experience">Dragonfly Experience</option>
+                                    	<option  value="Plum by Bentchair">Plum by Bentchair</option>
+                                    	<option  value="Daddy Everyday Bar">Daddy Everyday Bar</option>
+                                    	<option  value="JLWA Cafe">JLWA Cafe</option>
+                                    	<option  value="The Flying Saucer Cafe">The Flying Saucer Cafe</option>
+                                        <option  value="Rocky Star Cocktail Bar">Rocky Star Cocktail Bar</option>
+                                    	<option  value="TAMASHA Everyday Bar">TAMASHA Everyday Bar</option>
+                                    	<option  value="Teddy Boy Gastro Bar">Teddy Boy Gastro Bar</option>
+                                    	<option  value="Lazeez Affaire">Lazeez Affaire</option>
+                                    	<option  value="Warehouse Cafe">Warehouse Cafe</option>
+                                    	<option  value="Openhouse Cafe">Openhouse Cafe</option>
+                                    	<option  value="RPM Cafe">RPM Cafe</option>
+                                    	<option  value="Diablo">Diablo</option>
+                                    	<option  value="Miso Sexy">Miso Sexy</option>
+                                    	<option  value="Lies by Bentchair">Lies by Bentchair</option>
+                                    </select>
+                                </div>
+                            </div>
+    					</div>
+    					<div class="form-group">
+    						<label for="exampleFormControlTextarea1" style="margin-left: -365px;font-size: 13px;letter-spacing: 2px;">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
+    					</div>
+    					<div class="text-center">
+    						<button class="btn btn-warning" style="background-color: #593e0e;width: 150px; color: #ffffff;border-radius: 11px;font-size: 16px;">Submit Form</button>
+    					</div>
+    					<br>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="container-fluid yes" style="width: 100%;">
+    	<div class="container lol ">
+    		<div class="row">
+    			<div class="col-lg-4"></div>
+    			<div class="col-lg-3"></div>
+    			<div class="col-lg-5 text-center bg-warning modal-content">
+    				<div class="heading text-center yt">
+    					<h2 class="text-white">Inquiry Form</h2>
+    				</div>
+    				<p class="text-center text-white">
+    					For more information about how you can become the part of First Fiddle Restaurants, submit your information below and the Franchise Manager will get in touch with you.
+    				</p>
+    				<form>
+    					<div class="row">
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1">Name*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div> 
+                            </div>
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1">Mobile*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div>
+                            </div>
+    					</div>
+    					<div class="row">
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1">Email*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </div> 
+                            </div>
+    						<div class="col-md-6">   
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1">Business Location*</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                               </div>
+                           </div>
+    					</div>
+    					<div class="row">
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                     <label for="exampleFormControlInput1">Investment Budget*</label>
+                                     <select  class="custom-select ng-pristine ng-invalid is-invalid ng-touched" formcontrolname="investment_budget" name="investment_budget">
+                                     	<option  disabled="" value="">Investment Budget</option>
+                                     	<option  value="1 Cr to 2 Cr">1 Cr to 2 Cr</option>
+                                     	<option  value="2 Cr to 3 Cr">2 Cr to 3 Cr</option>
+                                     	<option  value="3 Cr to 4 Cr">3 Cr to 4 Cr</option>
+                                     	<option  value="4 Cr to Above">4 Cr to Above</option>
+                                     </select>
+                                </div> 
+                            </div>
+    						<div class="col-md-6">
+    							<div class="form-group">
+                                    <label for="exampleFormControlInput1">Brand*</label>
+                                    <select  class="custom-select ng-untouched ng-pristine ng-invalid" formcontrolname="all_brands" name="all_brands">
+                                    	<option  disabled="" value="">Select a Brand</option>
+                                    	<option  value="Lord of The Drinks">Lord of The Drinks</option>
+                                    	<option  value="Dragonfly Experience">Dragonfly Experience</option>
+                                    	<option  value="Plum by Bentchair">Plum by Bentchair</option>
+                                    	<option  value="Daddy Everyday Bar">Daddy Everyday Bar</option>
+                                    	<option  value="JLWA Cafe">JLWA Cafe</option>
+                                    	<option  value="The Flying Saucer Cafe">The Flying Saucer Cafe</option>
+                                        <option  value="Rocky Star Cocktail Bar">Rocky Star Cocktail Bar</option>
+                                    	<option  value="TAMASHA Everyday Bar">TAMASHA Everyday Bar</option>
+                                    	<option  value="Teddy Boy Gastro Bar">Teddy Boy Gastro Bar</option>
+                                    	<option  value="Lazeez Affaire">Lazeez Affaire</option>
+                                    	<option  value="Warehouse Cafe">Warehouse Cafe</option>
+                                    	<option  value="Openhouse Cafe">Openhouse Cafe</option>
+                                    	<option  value="RPM Cafe">RPM Cafe</option>
+                                    	<option  value="Diablo">Diablo</option>
+                                    	<option  value="Miso Sexy">Miso Sexy</option>
+                                    	<option  value="Lies by Bentchair">Lies by Bentchair</option>
+                                    </select>
+                                </div>
+                            </div>
+    					</div>
+    					<div class="form-group">
+    						<label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    					</div>
+    					<div class="text-center">
+    						<button class="btn btn-warning" style="background-color: #593e0e;border-color: #000000;width: 150px;  font-size: 15px;color: #ffffff;">Submit To</button>
+    					</div>
+    					<br>
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+
+    </div>
+
+        <div class="container-fluid bg-white">
+      <h4 class="text-left text-black" style="padding-top:55px;font-size:14px;margin-left: 40px;">ABOUT COMPANY<br><font size="14px"><span class="text-warning">Largest Restaurants</span> Chain of the<br> country</font></h4>
+      <br>
+     </div>
+            <div class="col-md-1"></div> 	  		
+    	  	    <div class="col-md-6" style="margin-left: 40px;"><!--start col md 7-->
+    	  			<p style="text-align: justify; line-height: 27px; font-size: 12px;
+    	  			word-spacing: 1px; letter-spacing: 2px;">First Fiddle Restaurants, one of the world’s largest F&B company in the casual dining sector, is headed by Priyank Sukhija. From Lazeez Affair, the first brand conceived in 1999 to Dragonfly Experience and Plum By Bent Chair, its latest ventures, it has brought a wave of innovation in the hospitality industry.<br>It has been lauded with an endless number of awards by ‘Times Nightlife’, ‘GQ’, ‘Indian Restaurant Awards’- to name a few. With more than 35 brands under its name such as Lord Of The Drinks, Tamasha, The Flying Saucer Café, JLWA, it has grown manifold in the past 20 years and continues to do so.</p>
+
+    	  			<button class="btn btn-warning" style="font-family: 'Montserrat', sans-serif;letter-spacing: 2px;background-color: #fbac29;height: 40px;margin-bottom: 20px;border-radius: 10px ;width: 140px;  font-size: 15px;color: #ffffff; ">READ MORE</button>
+
+    	  			</div><!--end col md 6-->
+    	  		<div class="col-md-4" style="padding-left:15px; padding-right:15px;"><!--start col md 5-->
+    	  			<img src="img/local2.jpg" style="padding-left: 0px; padding-right: 0px;height: 407px;width: 440px;margin-left: 801px;margin-top: -366px;; width: 451px;" class="w-100 d-block">
+    	  			<br><br>
+    	  		</div><!--end col md 5-->
+            <div class="col-md-1"></div>
+    	  	</div><!--end row-->
+    	  </div><!--end conatiner-->
+
+    </div><!--end container fluid-->
+
+<div class="conatiner-fluid bg-white"><!--start container fluid-->
+  <div class="container" style="padding-top: 40px;padding-bottom: 40px;">
+  	<div class="row" style="margin: -135px; padding-top: 103px;">
+    			<!--  <div class="col-md-1"></div><!--end --> 
+    			<div class="col-md-2"><!--start-->
+    				<img src="img/w.jpg" class="img-fluid" style="margin-bottom: 20px;">
+    			</div><!--end-->
+    			<div class="col-md-2"><!--start-->
+    				<img src="img/ww.jpg" class="img-fluid" style="margin-bottom: 20px;">
+    			</div><!--end-->
+    			<div class="col-md-2"><!--start-->
+    				<img src="img/www.jpg" class="img-fluid" style="margin-bottom: 20px;">
+    			</div><!--end-->
+    			<div class="col-md-2"><!--start-->
+    				<img src="img/wwww.jpg" class="img-fluid" style="margin-bottom: 20px;">
+    			</div><!--end-->
+    			<div class="col-md-2"><!--start-->
+    				<img src="img/wwwww.jpg" class="img-fluid" style="margin-bottom: 20px;">
+    			</div><!--end-->
+    			<div class="col-md-2"><!--start-->
+    				<img src="img/wwwwww.jpg" class="img-fluid" style="margin-bottom: 20px;">
+    			</div><!--end-->
+    		</div><!--end row-->
+    	</div><!--end conatiner-->
+    </div><!--end container fluid-->
+    <br>
+    <br>
+    <br><br>
+    <br>
+
+    	<div class="mainfooter"><!--start mainfooter-->
+      <div class="conatiner-fluid"><!--start container fluid-->
+      	<div class="row"><!--start row-->
+      		<div class="col-md-1"></div><!--end-->
+      		<div class="cold-md-4"><!--start-->
+      			<img src="img/fflogo.png" style="margin-top: 30px;" width="90%">
+      		</div><!--end-->
+      		<div class="col-md-1"></div><!--end-->
+      		<div class="col-md-6"><!--start-->
+      			<h1><span class="text-warning">CONTACT</span> US</h1>
+      			<p style="text-align: justify;">We're a team focusing on redefining the way the hospitality industry works by bringing in concept based restaurants across india. We are truly committed to catering to the ever-changing cosmopolitan taste of the customer and revolutioning the F & B industry!</p>
+
+      			<div class="row"><!--start inner row 1-->
+      				<div class="col-md-6"><!--start-->
+
+      				<h4 class="text-warning">Address</h4>
+      				<p>B6/22, 1st Floor, Safdarjung Enclave, New Delhi 110029, INDIA</p>
+      			    </div><!--end-->
+
+      			    <div class="col-md-6"><!--start-->
+
+      				<h4 class="text-warning">Franchise Enquiry</h4>
+      				<p>Mobile: <span class="text-warning">+91 9313663486</span><br>Email: <span class="text-warning">franchise@firstfiddle.in</span></p>
+      			    </div><!--end-->
+      			</div><!--end inner row 1-->
+      			<div class="row"><!--start inner row 2-->
+      				<div class="col-md-6"><!--start-->
+
+      				<h4 class="text-warning">HR Enquiry</h4>
+      				<p>Mobile: <span class="text-warning">+91 9999796366</span>
+      				   <br>Email: <span class="text-warning">careers@firstfiddle.in</p></span>
+      				   <!--icon--->
+                <div class="row">
+                  <div style="margin-left:4%;margin-right: 4%;margin-bottom: 4%;">
+                <a href=""><i class="fa fa-linkedin-square fa-2x" style="color:orange;" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="fa fa-facebook-official fa-2x" style="color:orange;" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="fa fa-twitter fa-2x" style="color:orange;" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href=""><i class="fa fa-instagram fa-2x" style="color:orange;" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                </div><!--end-->
+                </div>
+                <!--end icon-->
+      			    </div><!--end-->
+
+      			    <div class="col-md-6"><!--start-->
+
+      				<h4 class="text-warning">Other Enquiry</h4>
+      				<p>Mobile: <span class="text-warning">01141187447</span><br>Email: <span class="text-warning">customercare@firstfiddle.in</span></p>
+      			    </div><!--end-->
+      			    </div><!--end inner row 2-->
+      		</div>
+      	</div><!--end row-->
+    </div><!--end container fluid--> 
+    </div><!--end main footer-->
+
+    <div class="container-fluid" style="background-color: #000;"><!--start endfoot-->
+      <div class="row" style="display:block;">
+      <h6 class="text-center endfoot">PRIVACY POLICY | TERMS AND CONDITIONS | BLOG
+<br>COPYRIGHT © 2019 FIRST FIDDLE F&B PRIVATE LIMITED</h6>
+      </div>
+    </div><!--end of endfoot-->
+
+</body>
+</html>

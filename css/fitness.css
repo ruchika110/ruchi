@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.fitnessimg{
+   	background-image: url(../img/fitness2.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.b{
+	height: 65px;
+    width: 119px;
+    padding: 0px;
+    margin: -57px;
+    margin-top: -70px;
+}
+.bb{
+	height: 57px;
+	width: 119px;
+	padding: 0px;
+	margin: -64px;
+}

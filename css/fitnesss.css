@@ -1,0 +1,14 @@
+{
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+	background-image: url(../img/fitness2.jpg);
+	height: 120vh;
+	background-size: cover;
+	background-position: center;
+}
+.navbar-nav li a {
+	float: right;
+	color: #fff!important;
+}

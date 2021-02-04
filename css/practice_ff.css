@@ -1,0 +1,163 @@
+.spacing
+{
+	margin-top: 30px;
+	margin-bottom: 120px;
+}
+.ffimgbig
+{
+	background-image: url(../img/lotd1.jpeg);
+	width: 100%;
+	background-size: cover;
+	height: 710px;
+}
+.image2
+{
+	background-image: url(../img/ff2.jpg);
+	width: 100%;
+	background-size: cover;
+	height: 485px;
+}
+.image3
+{
+	background-image: url(../img/ff3.png);
+	width: 100%;
+	background-size: cover;
+	height: 485px;
+}
+.border-box{
+    border-style: solid;
+    border-width: thin;
+    border-color: #fbab29;
+}
+.mainfooter
+{
+	background: #020306f0;
+	padding: 50px;
+	color:#fff;
+}
+.endfoot
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: justify;
+	color:white;
+	margin-top:0px;
+	margin-bottom: 0rem;
+}
+.contactimg
+{
+	background-image: url(../img/contactff.jpg);
+	width: 100%;
+	background-size: cover;
+	height: 710px;
+}
+.aboutimg
+{
+	background-image: url(../img/about-new.jpg);
+	width: 100%;
+	background-size: cover;
+	height: 710px;
+}
+.brandimg
+{
+	background-image: url(../img/brands.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.image4
+{
+	background-image: url(../img/about3.jpg);
+	width: 100%;
+	background-size: cover;
+	height: 485px;
+	box-shadow: 0 10px 16px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)!important;
+}
+.ourteamimg{
+	background-image: url(../img/franchise-with-us.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.pressreleaseimg{
+	background-image: url(../img/release.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.contactimg{
+	background-image: url(../img/contact-new.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.careerimg{
+	background-image: url(../img/career.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.e{
+	  height: 500px;
+	  width: 400px;
+	  border:30px;
+	  overflow: auto;
+	  box-sizing: border-box;
+	  border: 1px solid white ;
+}
+.franchiseimg{
+	background-image: url(../img/banner2.jpg);
+	width: 100%;
+	background-size: cover;
+	height:710px;
+}
+.d{
+	box-shadow: 0px 0px 4px 1px grey;
+	margin-top: 10px;
+	margin-left: 55px;
+	margin-right: 55px;
+	padding-left: 35px;
+	padding-right: 35px;
+	height: 603px;
+}
+.e{
+	  height: 300px;
+	  width: 100%;
+	  border:30px;
+	  overflow-y: scroll;
+	  font-size: 12px;
+	  box-sizing: border-box;
+      border: 1px solid white ;
+	  }
+.e::-webkit-scrollbar{
+	width:12px;
+	
+}
+.e::-webkit-scrollbar-track{
+	border:7px solid pink;
+	border-radius: 5px;
+}
+.e::-webkit-scrollbar-thumb{
+	background:orange;
+	border-radius: 5px;
+}
+.d{
+	box-shadow: 0px 0px 4px 1px grey;
+	margin-top:10px;
+	margin-left:55px;
+	margin-right:55px;
+	padding-left: 35px;
+	padding-right: 35px;
+	height:820px;
+}
+.space{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.franchise{
+	background-color: #fbb029;
+	margin-top: 169px;
+    margin-left: 800px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
